@@ -1,418 +1,488 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
 
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
     <!-- Favicons and theme-color -->
-    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicons/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicons/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicons/favicon-16x16.png">
-    <link rel="manifest" href="assets/images/favicons/site.webmanifest">
-    <link rel="mask-icon" href="assets/images/favicons/safari-pinned-tab.svg" color="#008c7e">
-    <link rel="shortcut icon" href="assets/images/favicons/favicon.ico">
-    <meta name="msapplication-TileColor" content="#008c7e">
-    <meta name="theme-color" content="#008c7e">
-    <title>About Us - Music School - Milestone 1 by Kevin Bourke</title>
-    
-    <!--Template based on URL below-->
-    <link rel="canonical" href="https://getbootstrap.com/docs/4.3/examples/starter-template/">
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="assets/images/favicons/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="assets/images/favicons/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="assets/images/favicons/favicon-16x16.png"
+    />
+    <link rel="manifest" href="assets/images/favicons/site.webmanifest" />
+    <link rel="mask-icon" href="assets/images/favicons/safari-pinned-tab.svg" color="#008c7e" />
+    <link rel="shortcut icon" href="assets/images/favicons/favicon.ico" />
+    <meta name="msapplication-TileColor" content="#008c7e" />
+    <meta name="theme-color" content="#008c7e" />
 
-    <!-- Bootstrap core CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <!-- other CSS-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
-    <link href="https://fonts.googleapis.com/css?family=Bebas+Neue%7CSource+Sans+Pro:400,400i,700&display=swap" rel="stylesheet">
-    <!-- Place your stylesheet here-->
-    <link href="assets/css/style.css" rel="stylesheet" type="text/css">
-</head>
+    <title>О нас — Музыкальная школа</title>
 
-<body>
-    <a href="#maincontent" class="screen-reader-link sr-only">Skip to main content</a>
+    <!-- Bootstrap -->
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.3/examples/starter-template/" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <!-- other CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Bebas+Neue%7CSource+Sans+Pro:400,400i,700&display=swap"
+      rel="stylesheet"
+    />
+    <link href="assets/css/style.css" rel="stylesheet" type="text/css" />
+  </head>
+
+  <body>
+    <a href="#maincontent" class="screen-reader-link sr-only">Перейти к основному содержимому</a>
+
     <header class="full-width-header fixed-top">
-        <div class="container">
-            <nav class="navbar navbar-expand-md navbar-light bg-white">
-                <a class="navbar-brand" href="index.html"><img src="assets/images/music-school-logo-dark-green.svg" alt="Music School logo" class="logo"></a>
-                <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbars" aria-controls="navbars" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+      <div class="container">
+        <nav class="navbar navbar-expand-md navbar-light bg-white">
+          <a class="navbar-brand" href="index.html">
+            <img
+              src="assets/images/music-school-logo-dark-green.svg"
+              alt="Логотип музыкальной школы"
+              class="logo"
+            />
+          </a>
+          <button
+            class="navbar-toggler collapsed"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbars"
+            aria-controls="navbars"
+            aria-expanded="false"
+            aria-label="Навигация"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
 
-                <div class="collapse navbar-collapse" id="navbars">
-                    <ul class="navbar-nav ml-auto">
-                        <li class="nav-item dropdown home">
-                            <a class="nav-link d-inline-block" href="index.html">Home</a>
-                            <!-- arrow link after home -->
-                            <a class="dropdown-toggle d-inline-block d-md-none" href="index.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="sr-only">Jump to section</span></a>
-                            <!-- sub menu -->
-                            <ul class="dropdown-menu sub-menu d-md-none" aria-labelledby="navbarDropdown">
-                                <li class="sub-menu-title">Jump to section</li>
-                                <li class="sub-menu-item">
-                                    <a class="sub-nav-link" href="index.html#popular">Popular Classes</a>
-                                </li>
-                                <li class="sub-menu-item">
-                                    <a class="sub-nav-link" href="index.html#benefits">The Benefits of Music</a>
-                                </li>
-                                <li class="sub-menu-item">
-                                    <a class="sub-nav-link" href="index.html#testimonials">Testimonials</a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="nav-item active">
-                            <a class="nav-link" href="about.html">About Us<span class="sr-only">(current)</span></a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="classes.html">Classes/Fees</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="contact.html">Contact</a>
-                        </li>
-                        <li class="nav-item">
-                            <ul class="social-icons-list">
-                                <li>
-                                    <a target="_blank" href="https://twitter.com/">
-                                        <i class="fab fa-twitter fa-sm" aria-hidden="true"></i>
-                                        <span class="sr-only">Twitter</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a target="_blank" href="https://www.linkedin.com/">
-                                        <i class="fab fa-linkedin-in fa-sm" aria-hidden="true"></i>
-                                        <span class="sr-only">LinkedIn</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a target="_blank" href="https://www.facebook.com/">
-                                        <i class="fab fa-facebook-f fa-sm" aria-hidden="true"></i>
-                                        <span class="sr-only">Facebook</span>
-                                    </a>
-                                </li>
-                            </ul>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
-        </div>
+          <div class="collapse navbar-collapse" id="navbars">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item dropdown home">
+                <a class="nav-link d-inline-block" href="index.html">Главная</a>
+                <a
+                  class="dropdown-toggle d-inline-block d-md-none"
+                  href="index.html"
+                  id="navbarDropdown"
+                  role="button"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  <span class="sr-only">Перейти к разделу</span></a
+                >
+
+                <ul class="dropdown-menu sub-menu d-md-none" aria-labelledby="navbarDropdown">
+                  <li class="sub-menu-title">Разделы</li>
+                  <li class="sub-menu-item">
+                    <a class="sub-nav-link" href="index.html#popular">Популярные занятия</a>
+                  </li>
+                  <li class="sub-menu-item">
+                    <a class="sub-nav-link" href="index.html#benefits">Польза музыки</a>
+                  </li>
+                  <li class="sub-menu-item">
+                    <a class="sub-nav-link" href="index.html#testimonials">Отзывы</a>
+                  </li>
+                </ul>
+              </li>
+
+              <li class="nav-item active">
+                <a class="nav-link" href="about.html"
+                  >О нас<span class="sr-only">(текущая)</span></a
+                >
+              </li>
+
+              <li class="nav-item"><a class="nav-link" href="classes.html">Занятия и цены</a></li>
+              <li class="nav-item"><a class="nav-link" href="contact.html">Контакты</a></li>
+
+              <li class="nav-item">
+                <ul class="social-icons-list">
+                  <li>
+                    <a target="_blank" href="https://twitter.com/">
+                      <i class="fab fa-twitter fa-sm"></i><span class="sr-only">Twitter</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a target="_blank" href="https://www.linkedin.com/">
+                      <i class="fab fa-linkedin-in fa-sm"></i><span class="sr-only">LinkedIn</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a target="_blank" href="https://www.facebook.com/">
+                      <i class="fab fa-facebook-f fa-sm"></i><span class="sr-only">Facebook</span>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
     </header>
-    
+
     <main id="maincontent">
-        <div class="title-panel title-panel--about">
-            <div class="container">
-                <h1 class="page-title">About Us</h1>
-            </div>
-            <div id="about-school"></div>
-        </div>
-        <!-- school stats  -->
-        <section class="row-outer-container bg-light-green">
-            <div class="container">
-                <div class="row text-center text-dark text-shadow-primary">
-                    <div class="col-md-4 py-0 py-md-3 divider-b">
-                        <p class="stat-number mb-0">350+</p>
-                        <p class="stat-sub-header">Students</p>
-                    </div>
-                    <div class="col-md-4 py-0 py-md-3 divider-b">
-                        <p class="stat-number mb-0">4</p>
-                        <p class="stat-sub-header">Teachers</p>
-                    </div>
-                    <div class="col-md-4 py-0 py-md-3 divider-b">
-                        <p class="stat-number mb-0">6</p>
-                        <p class="stat-sub-header">Classes</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- about the music school -->
-        <section class="container">
-            <div class="row">
-                <div class="col-lg-6 pt-5 pb-0 pb-lg-5">
-                    <h2 class="content-heading mb-4 text-center text-md-left">About the Music School</h2>
-                    <p class="lead">The Music School has a wide range of classes, suitable for all experience levels, from beginners to advanced and for all ages, starting from 5 years old! We are committed to developing a passion for music in all our students and to creating an environment where students can genuinely look forward to their lessons. </p>
-                    <p>The Music School offers high quality Piano, Guitar, Drums, Violin, Trumpet and Singing lessons in North Dublin. It is our goal to ensure that every student is encouraged to be a passionate and productive musician. We provide each student with the opportunity to develop a personalised term plan with their teachers, outlining clear aims for each term. These aims are then reviewed by students, parents and teachers at the end of each term, and adjustments may be made where necessary.</p>
-                </div>
-                <div class="col-lg-6 pt-2 pb-5 pt-lg-5">
-                    <img class="mt-2 two-corner-border-on-white" src="assets/images/guitar-teaching-690x543.jpg" alt="Student being shown how to play guitar" />
-                </div>
-            </div>
-        </section>
-        <!-- testimonials -->
-        <section class="row-outer-container bg-light-grey bg-img testimonials bg-fixed">
-            <div class="container">
-                <div class="row">
-                    <div class="col pt-5 pb-0 text-center">
-                        <h2 class="content-heading mb-4 text-white text-shadow-primary">What Our Students Say</h2>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-12 pt-0 pb-5">
-                        <!-- Testimonial Carousel -->
-                        <div id="carouselTestimonials" class="carousel slide slide--testimonial" data-ride="carousel">
-                            <ol class="carousel-indicators d-md-none">
-                                <li data-target="#carouselTestimonials" data-slide-to="0" class="active"></li>
-                                <li data-target="#carouselTestimonials" data-slide-to="1"></li>
-                                <li data-target="#carouselTestimonials" data-slide-to="2"></li>
-                            </ol>
-                            <div class="carousel-inner">
-                                <div class="carousel-item active">
-                                    <!-- BS Card -->
-                                    <div class="card testimonial-card d-block w-100 text-center py-4 py-lg-5">
-                                        <i class="fas fa-quote-left fa-6x card-img-top"></i>
-                                        <div class="card-body">
-                                            <h3 class="card-title text-shadow-primary">Julie Byrne</h3>
-                                            <h4 class="card-subtitle mb-4">Guitar Class</h4>
-                                            <p class="card-text lead text-white">I am most grateful that my son's guitar teacher not only makes learning fun and shares his knowledge, but his passion for music as well. He could not have found a better place to learn guitar.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="carousel-item">
-                                    <!-- BS Card -->
-                                    <div class="card testimonial-card d-block w-100 text-center py-4 py-lg-5">
-                                        <i class="fas fa-quote-left fa-6x card-img-top"></i>
-                                        <div class="card-body">
-                                            <h3 class="card-title text-shadow-primary">John McGuire</h3>
-                                            <h4 class="card-subtitle mb-4">Piano Class</h4>
-                                            <p class="card-text lead text-white">My son has been taking piano for more than a year. He loves his teachers and I can tell that they really care about my kid too. Your music school is wonderful and I highly recommend it.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="carousel-item">
-                                    <!-- BS Card -->
-                                    <div class="card testimonial-card d-block w-100 text-center py-4 py-lg-5">
-                                        <i class="fas fa-quote-left fa-6x card-img-top"></i>
-                                        <div class="card-body">
-                                            <h3 class="card-title text-shadow-primary">Susan Davis</h3>
-                                            <h4 class="card-subtitle mb-4">Violin Class</h4>
-                                            <p class="card-text lead text-white">The violin lessons here are very enjoyable. The teachers make everything easier to understand and more accommodating. They make the whole course seem less intimidating.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div><!-- ./ carousel-inner -->
-                            <a class="carousel-control-prev d-none d-md-flex" href="#carouselTestimonials" role="button" data-slide="prev">
-                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                <span class="sr-only">Previous</span>
-                            </a>
-                            <a class="carousel-control-next d-none d-md-flex" href="#carouselTestimonials" role="button" data-slide="next">
-                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                <span class="sr-only">Next</span>
-                            </a>
-                        </div><!-- ./ carousel -->
-                    </div>
-                </div>
-            </div><!-- ./container -->
-        </section>
-        <!-- benefits of music -->
-        <section class="container py-5">
-            <div class="row">
-                <div class="col text-center">
-                    <h2 class="content-heading">Our Teachers</h2>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-6 col-lg-3 pt-3">
-                    <div class="card teachers-card text-center">
-                       <div class="img-wrap circle-border card-shadow-2">
-                            <img src="assets/images/male-teacher-guitar.jpg" class="card-img-top circle" alt="Guitar Teacher">
-                        </div>
-                        <div class="card-body">
-                            <h3 class="card-title name">John Brady</h3>
-                            <h4 class="card-subtitle">Guitar/Drums teacher</h4>
-                            <p class="card-text">Has a Bachelor of Music and Masters Degree in Music Composition. He studied at the Royal Irish Academy of Music.</p>
-                            <div class="card-social">
-                                <ul class="social-icons-list">
-                                    <li>
-                                        <a target="_blank" href="https://www.facebook.com/">
-                                            <i class="fab fa-facebook-f fa-xs" aria-hidden="true"></i>
-                                            <span class="sr-only">Facebook</span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a target="_blank" href="https://www.linkedin.com/">
-                                            <i class="fab fa-linkedin-in fa-xs" aria-hidden="true"></i>
-                                            <span class="sr-only">Twitter</span>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div><!-- /.col -->
-                <div class="col-md-6 col-lg-3 pt-3">
-                    <div class="card teachers-card text-center">
-                       <div class="img-wrap circle-border card-shadow-2">
-                            <img src="assets/images/female-teacher-piano.jpg" class="card-img-top circle" alt="Piano Teacher">
-                        </div>
-                        <div class="card-body">
-                            <h3 class="card-title name">Michelle Wills</h3>
-                            <h4 class="card-subtitle">Piano/Vocal teacher</h4>
-                            <p class="card-text">Michelle completed a diploma in music performance before studying classical piano with Alan Grundy at the Dublin Conservatory of Music.</p>
-                            <div class="card-social">
-                                <ul class="social-icons-list">
-                                    <li>
-                                        <a target="_blank" href="https://www.facebook.com/">
-                                            <i class="fab fa-facebook-f fa-xs" aria-hidden="true"></i>
-                                            <span class="sr-only">Facebook</span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a target="_blank" href="https://www.linkedin.com/">
-                                            <i class="fab fa-linkedin-in fa-xs" aria-hidden="true"></i>
-                                            <span class="sr-only">Twitter</span>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div><!-- /.col -->
-                <div class="col-md-6 col-lg-3 pt-3">
-                    <div class="card teachers-card text-center">
-                       <div class="img-wrap circle-border card-shadow-2">
-                            <img src="assets/images/male-teacher-trumpet.jpg" class="card-img-top circle" alt="Trumpet Teacher">
-                        </div>
-                        <div class="card-body">
-                            <h3 class="card-title name">David Williams</h3>
-                            <h4 class="card-subtitle">Trumpet/Piano teacher</h4>
-                            <p class="card-text">David is a Trumpet and Piano teacher. He graduated with a Masters in Jazz Performance from Dublin Institute of Technology.</p>
-                            <div class="card-social">
-                                <ul class="social-icons-list">
-                                    <li>
-                                        <a target="_blank" href="https://www.facebook.com/">
-                                            <i class="fab fa-facebook-f fa-xs" aria-hidden="true"></i>
-                                            <span class="sr-only">Facebook</span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a target="_blank" href="https://www.linkedin.com/">
-                                            <i class="fab fa-linkedin-in fa-xs" aria-hidden="true"></i>
-                                            <span class="sr-only">Twitter</span>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div><!-- /.col -->
-                <div class="col-md-6 col-lg-3 pt-3">
-                    <div class="card teachers-card text-center">
-                       <div class="img-wrap circle-border card-shadow-2">
-                            <img src="assets/images/female-teacher-singer.jpg" class="card-img-top circle" alt="Vocal/Violin Teacher">
-                        </div>
-                        <div class="card-body">
-                            <h3 class="card-title name">Lucy Lonergan</h3>
-                            <h4 class="card-subtitle">Vocal/Violin teacher</h4>
-                            <p class="card-text">Graduated from the Irish Institute of Modern Music in 2018 with an Honours degree with a special interest in Vocal Studies.</p>
-                            <div class="card-social">
-                                <ul class="social-icons-list">
-                                    <li>
-                                        <a target="_blank" href="https://www.facebook.com/">
-                                            <i class="fab fa-facebook-f fa-xs" aria-hidden="true"></i>
-                                            <span class="sr-only">Facebook</span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a target="_blank" href="https://www.linkedin.com/">
-                                            <i class="fab fa-linkedin-in fa-xs" aria-hidden="true"></i>
-                                            <span class="sr-only">Twitter</span>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div><!-- /.col -->
-            </div><!-- ./row -->
-        </section><!-- /.container -->
-    </main>
-    <footer class="full-width-footer">
+      <div class="title-panel title-panel--about">
+        <div class="container"><h1 class="page-title">О нас</h1></div>
+        <div id="about-school"></div>
+      </div>
+
+      <!-- STATS -->
+      <section class="row-outer-container bg-light-green">
         <div class="container">
-            <div class="row">
-                <div class="col-sm">
-                    <div class="logo-footer mb-4 text-center text-sm-left">
-                        <img src="assets/images/music-school-logo-white.svg" alt="Music School logo" class="logo">
-                    </div>
-                    <div class="footer-text text-justify text-sm-left">
-                        <p>The Music School offers high quality Piano, Guitar, Drums, Violin, Trumpet and Singing lessons in North Dublin. It is our goal to ensure that every student is encouraged to be a passionate and productive musician.</p>
-                        <p><a href="about.html#about-school">Read more...</a></p>
-                    </div>
-                </div>
-                <div class="col-sm opening-hours pt-4 pt-sm-0">
-                    <h4 class="widget-heading text-center text-sm-left">Class Hours</h4>
-                    <ul class="oh-list">
-                        <li class="oh-list-item">
-                            <strong>Monday to Friday</strong><br>
-                            9am - 5pm
-                        </li>
-                        <li class="oh-list-item">
-                            <strong>Saturdays</strong><br>
-                            10am - 3pm
-                        </li>
-                        <li class="oh-list-item">
-                            <strong>Evening Classes</strong><br>
-                            6pm - 9pm
-                        </li>
-                    </ul>
-                </div>
-                <div class="col-sm pt-4 pt-sm-0">
-                    <h4 class="widget-heading text-center text-sm-left">Contact Us</h4>
-                    <ul class="contact-icons-list">
-                        <li class="contact-list-item">
-                            <a href="https://goo.gl/maps/59VPLiMFGJ8kMzbK6" target="_blank"><i class="fas fa-map-marker-alt fa-lg"></i>St Aidan's Park Rd, Clontarf West, Dublin 3, Ireland</a>
-                        </li>
-                        <li class="contact-list-item">
-                            <a href="tel:0035318551234"><i class="fas fa-phone-alt fa-lg"></i>+353 1 855 1234</a>
-                        </li>
-                        <li class="contact-list-item">
-                            <a href="mailto:info@musicschool.ie"><i class="fas fa-envelope fa-lg"></i>info@musicschool.ie</a>
-                        </li>
-                    </ul>
-                    <ul class="social-icons-list text-center text-sm-left">
-                        <li>
-                            <a target="_blank" href="https://twitter.com/">
-                                <i class="fab fa-twitter fa-sm" aria-hidden="true"></i>
-                                <span class="sr-only">Twitter</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a target="_blank" href="https://www.linkedin.com/">
-                                <i class="fab fa-linkedin-in fa-sm" aria-hidden="true"></i>
-                                <span class="sr-only">LinkedIn</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a target="_blank" href="https://www.facebook.com/">
-                                <i class="fab fa-facebook-f fa-sm" aria-hidden="true"></i>
-                                <span class="sr-only">Facebook</span>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
+          <div class="row text-center text-dark text-shadow-primary">
+            <div class="col-md-4 divider-b py-3">
+              <p class="stat-number mb-0">350+</p>
+              <p class="stat-sub-header">Ученики</p>
             </div>
-        </div>
-        <!-- copyright -->
-        <div class="full-width-copyright">
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm-4">
-                        2020 &copy; Music School
-                    </div>
-                    <div class="col-sm-4">
-                        For educational purposes only. 
-                        <a href="https://www.vecteezy.com/free-vector/flowers">Instrument Vectors by Vecteezy</a>
-                    </div>
-                    <div class="col-sm-4">
-                        Website by Kevin Bourke
-                    </div>
-                </div>
+            <div class="col-md-4 divider-b py-3">
+              <p class="stat-number mb-0">4</p>
+              <p class="stat-sub-header">Преподаватели</p>
             </div>
+            <div class="col-md-4 divider-b py-3">
+              <p class="stat-number mb-0">6</p>
+              <p class="stat-sub-header">Курсов</p>
+            </div>
+          </div>
         </div>
+      </section>
+
+      <!-- ABOUT THE SCHOOL -->
+      <section class="container">
+        <div class="row">
+          <div class="col-lg-6 pt-5">
+            <h2 class="content-heading mb-4">О музыкальной школе</h2>
+
+            <p class="lead">
+              Музыкальная школа предлагает широкий выбор занятий для всех уровней — от новичков до
+              продвинутых, и для всех возрастов, начиная с 5 лет! Мы стремимся развивать любовь к
+              музыке у каждого ученика и создавать атмосферу, в которой занятия становятся в
+              радость.
+            </p>
+
+            <p>
+              Мы предоставляем уроки игры на пианино, гитаре, ударных, скрипке, трубе и уроки вокала
+              в Северном Дублине. Каждый ученик вместе с преподавателем составляет персональный
+              учебный план, который затем оценивается и корректируется по итогам каждого семестра.
+            </p>
+          </div>
+
+          <div class="col-lg-6 pt-5">
+            <img
+              class="two-corner-border-on-white mt-2"
+              src="assets/images/guitar-teaching-690x543.jpg"
+              alt="Преподаватель учит играть на гитаре"
+            />
+          </div>
+        </div>
+      </section>
+
+      <!-- TESTIMONIALS -->
+      <section class="row-outer-container bg-light-grey bg-img testimonials bg-fixed">
+        <div class="container">
+          <div class="row">
+            <div class="col text-center pt-5 pb-0">
+              <h2 class="content-heading text-white text-shadow-primary">
+                Что говорят наши ученики
+              </h2>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-12 pb-5">
+              <div
+                id="carouselTestimonials"
+                class="carousel slide slide--testimonial"
+                data-ride="carousel"
+              >
+                <ol class="carousel-indicators d-md-none">
+                  <li data-target="#carouselTestimonials" data-slide-to="0" class="active"></li>
+                  <li data-target="#carouselTestimonials" data-slide-to="1"></li>
+                  <li data-target="#carouselTestimonials" data-slide-to="2"></li>
+                </ol>
+
+                <div class="carousel-inner">
+                  <!-- 1 -->
+                  <div class="carousel-item active">
+                    <div class="card testimonial-card text-center py-4 py-lg-5">
+                      <i class="fas fa-quote-left fa-6x"></i>
+                      <div class="card-body">
+                        <h3 class="card-title text-shadow-primary">Джули Бирн</h3>
+                        <h4 class="card-subtitle mb-4">Уроки гитары</h4>
+                        <p class="card-text lead text-white">
+                          Я очень благодарна учителю моего сына за то, что он делает процесс
+                          обучения интересным и делится своей любовью к музыке. Это идеальное место
+                          для изучения гитары.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- 2 -->
+                  <div class="carousel-item">
+                    <div class="card testimonial-card text-center py-4 py-lg-5">
+                      <i class="fas fa-quote-left fa-6x"></i>
+                      <div class="card-body">
+                        <h3 class="card-title text-shadow-primary">Джон МакГуайр</h3>
+                        <h4 class="card-subtitle mb-4">Уроки фортепиано</h4>
+                        <p class="card-text lead text-white">
+                          Мой сын занимается уже больше года и обожает своих преподавателей. Видно,
+                          что они заботятся о каждом ученике. Школа потрясающая — рекомендую всем!
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- 3 -->
+                  <div class="carousel-item">
+                    <div class="card testimonial-card text-center py-4 py-lg-5">
+                      <i class="fas fa-quote-left fa-6x"></i>
+                      <div class="card-body">
+                        <h3 class="card-title text-shadow-primary">Сьюзан Дэвис</h3>
+                        <h4 class="card-subtitle mb-4">Уроки скрипки</h4>
+                        <p class="card-text lead text-white">
+                          Занятия здесь очень увлекательные. Преподаватели всё объясняют доступно и
+                          создают дружественную атмосферу.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <a
+                  class="carousel-control-prev d-none d-md-flex"
+                  href="#carouselTestimonials"
+                  role="button"
+                  data-slide="prev"
+                >
+                  <span class="carousel-control-prev-icon"></span>
+                  <span class="sr-only">Назад</span>
+                </a>
+                <a
+                  class="carousel-control-next d-none d-md-flex"
+                  href="#carouselTestimonials"
+                  role="button"
+                  data-slide="next"
+                >
+                  <span class="carousel-control-next-icon"></span>
+                  <span class="sr-only">Вперёд</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- TEACHERS -->
+      <section class="container py-5">
+        <div class="row">
+          <div class="col text-center">
+            <h2 class="content-heading">Наши преподаватели</h2>
+          </div>
+        </div>
+
+        <div class="row">
+          <!-- 1 -->
+          <div class="col-md-6 col-lg-3 pt-3">
+            <div class="card teachers-card text-center">
+              <div class="img-wrap circle-border card-shadow-2">
+                <img
+                  src="assets/images/male-teacher-guitar.jpg"
+                  class="card-img-top circle"
+                  alt="Учитель гитары"
+                />
+              </div>
+              <div class="card-body">
+                <h3 class="card-title name">Алексей Борисов</h3>
+                <h4 class="card-subtitle">Преподаватель гитары/ударных</h4>
+                <p class="card-text">
+                  Окончил Московский институт музыки. Специализируется на современной технике игры и
+                  работе с начинающими. Имеет более десяти лет преподавания и помогает ученикам
+                  уверенно развивать музыкальные навыки.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- 2 -->
+          <div class="col-md-6 col-lg-3 pt-3">
+            <div class="card teachers-card text-center">
+              <div class="img-wrap circle-border card-shadow-2">
+                <img
+                  src="assets/images/female-teacher-piano.jpg"
+                  class="card-img-top circle"
+                  alt="Учитель фортепиано"
+                />
+              </div>
+              <div class="card-body">
+                <h3 class="card-title name">Марина Орлова</h3>
+                <h4 class="card-subtitle">Преподаватель фортепиано/вокала</h4>
+                <p class="card-text">
+                  Выпускница Санкт-Петербургской консерватории. Работает в академическом и эстрадном
+                  направлениях. Индивидуально подбирает программу и помогает ученикам уверенно
+                  раскрывать творческие способности.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- 3 -->
+          <div class="col-md-6 col-lg-3 pt-3">
+            <div class="card teachers-card text-center">
+              <div class="img-wrap circle-border card-shadow-2">
+                <img
+                  src="assets/images/male-teacher-trumpet.jpg"
+                  class="card-img-top circle"
+                  alt="Учитель трубы"
+                />
+              </div>
+              <div class="card-body">
+                <h3 class="card-title name">Игорь Лебедев</h3>
+                <h4 class="card-subtitle">Преподаватель трубы/пианино</h4>
+                <p class="card-text">
+                  Окончил Академию музыки имени Гнесиных. Сотрудничал с джазовыми ансамблями и
+                  оркестрами. Более семи лет обучает учеников, помогает развивать технику и уверенно
+                  выступать на сцене в разных музыкальных направлениях.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- 4 -->
+          <div class="col-md-6 col-lg-3 pt-3">
+            <div class="card teachers-card text-center">
+              <div class="img-wrap circle-border card-shadow-2">
+                <img
+                  src="assets/images/female-teacher-singer.jpg"
+                  class="card-img-top circle"
+                  alt="Учитель вокала"
+                />
+              </div>
+              <div class="card-body">
+                <h3 class="card-title name">Анна Воронова</h3>
+                <h4 class="card-subtitle">Преподаватель вокала/скрипки</h4>
+                <p class="card-text">
+                  Выпускница Уральского музыкального колледжа. Специализируется на современных
+                  вокальных техниках и постановке голоса. Создаёт комфортную атмосферу и помогает
+                  ученикам уверенно развивать музыкальные способности.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="full-width-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm">
+            <div class="logo-footer mb-4">
+              <img
+                src="assets/images/music-school-logo-white.svg"
+                alt="Логотип музыкальной школы"
+                class="logo"
+              />
+            </div>
+            <div class="footer-text text-justify">
+              <p>
+                Мы предлагаем уроки игры на пианино, гитаре, ударных, скрипке, трубе и вокала в
+                Северном Дублине. Мы стремимся вдохновлять каждого ученика и помогать становиться
+                увлечённым музыкантом.
+              </p>
+              <p><a href="about.html#about-school">Читать далее...</a></p>
+            </div>
+          </div>
+
+          <div class="col-sm opening-hours pt-4 pt-sm-0">
+            <h4 class="widget-heading">Часы занятий</h4>
+            <ul class="oh-list">
+              <li><strong>Понедельник — Пятница</strong><br />9:00 — 17:00</li>
+              <li><strong>Суббота</strong><br />10:00 — 15:00</li>
+              <li><strong>Вечерние занятия</strong><br />18:00 — 21:00</li>
+            </ul>
+          </div>
+
+          <div class="col-sm pt-4 pt-sm-0">
+            <h4 class="widget-heading">Связаться с нами</h4>
+            <ul class="contact-icons-list">
+              <li>
+                <a href="https://goo.gl/maps/59VPLiMFGJ8kMzbK6" target="_blank">
+                  <i class="fas fa-map-marker-alt fa-lg"></i>
+                  St Aidan's Park Rd, Clontarf West, Dublin 3, Ireland
+                </a>
+              </li>
+              <li>
+                <a href="tel:0035318551234"
+                  ><i class="fas fa-phone-alt fa-lg"></i>+353 1 855 1234</a
+                >
+              </li>
+              <li>
+                <a href="mailto:info@musicschool.ie"
+                  ><i class="fas fa-envelope fa-lg"></i>info@musicschool.ie</a
+                >
+              </li>
+            </ul>
+
+            <ul class="social-icons-list">
+              <li>
+                <a href="https://twitter.com/" target="_blank"
+                  ><i class="fab fa-twitter fa-sm"></i
+                ></a>
+              </li>
+              <li>
+                <a href="https://www.linkedin.com/" target="_blank"
+                  ><i class="fab fa-linkedin-in fa-sm"></i
+                ></a>
+              </li>
+              <li>
+                <a href="https://www.facebook.com/" target="_blank"
+                  ><i class="fab fa-facebook-f fa-sm"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- COPYRIGHT -->
+      <div class="full-width-copyright">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-4">2020 &copy; Музыкальная школа</div>
+            <div class="col-sm-4">
+              Только в образовательных целях.
+              <a href="https://www.vecteezy.com/free-vector/flowers"
+                >Векторные иллюстрации инструментов — Vecteezy</a
+              >
+            </div>
+            <div class="col-sm-4">Сайт разработан Kevin Bourke</div>
+          </div>
+        </div>
+      </div>
     </footer>
 
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-
-</body>
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  </body>
 </html>

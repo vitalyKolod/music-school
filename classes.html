@@ -1,496 +1,562 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
 
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
     <!-- Favicons and theme-color -->
-    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicons/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicons/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicons/favicon-16x16.png">
-    <link rel="manifest" href="assets/images/favicons/site.webmanifest">
-    <link rel="mask-icon" href="assets/images/favicons/safari-pinned-tab.svg" color="#008c7e">
-    <link rel="shortcut icon" href="assets/images/favicons/favicon.ico">
-    <meta name="msapplication-TileColor" content="#008c7e">
-    <meta name="theme-color" content="#008c7e">
-    <title>Classes and Fees - Music School - Milestone 1 by Kevin Bourke</title>
-    
-    <!--Template based on URL below-->
-    <link rel="canonical" href="https://getbootstrap.com/docs/4.3/examples/starter-template/">
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="assets/images/favicons/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="assets/images/favicons/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="assets/images/favicons/favicon-16x16.png"
+    />
+    <link rel="manifest" href="assets/images/favicons/site.webmanifest" />
+    <link rel="mask-icon" href="assets/images/favicons/safari-pinned-tab.svg" color="#008c7e" />
+    <link rel="shortcut icon" href="assets/images/favicons/favicon.ico" />
+    <meta name="msapplication-TileColor" content="#008c7e" />
+    <meta name="theme-color" content="#008c7e" />
 
-    <!-- Bootstrap core CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <!-- other CSS-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
-    <link href="https://fonts.googleapis.com/css?family=Bebas+Neue%7CSource+Sans+Pro:400,400i,700&display=swap" rel="stylesheet">
-    <!-- Place your stylesheet here-->
-    <link href="assets/css/style.css" rel="stylesheet" type="text/css">
-    
-</head>
+    <title>Занятия и цены — Музыкальная школа</title>
 
-<body>
-    <a href="#maincontent" class="screen-reader-link sr-only">Skip to main content</a>
+    <!-- Bootstrap -->
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.3/examples/starter-template/" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+
+    <!-- Icons + Fonts -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Bebas+Neue%7CSource+Sans+Pro:400,400i,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Main CSS -->
+    <link href="assets/css/style.css" rel="stylesheet" type="text/css" />
+  </head>
+
+  <body>
+    <a href="#maincontent" class="screen-reader-link sr-only">Перейти к основному содержимому</a>
+
     <header class="full-width-header fixed-top">
-        <div class="container">
-            <nav class="navbar navbar-expand-md navbar-light bg-white">
-                <a class="navbar-brand" href="index.html"><img src="assets/images/music-school-logo-dark-green.svg" alt="Music School logo" class="logo"></a>
-                <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbars" aria-controls="navbars" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+      <div class="container">
+        <nav class="navbar navbar-expand-md navbar-light bg-white">
+          <a class="navbar-brand" href="index.html">
+            <img
+              src="assets/images/music-school-logo-dark-green.svg"
+              alt="Логотип музыкальной школы"
+              class="logo"
+            />
+          </a>
 
-                <div class="collapse navbar-collapse" id="navbars">
-                    <ul class="navbar-nav ml-auto">
-                        <li class="nav-item dropdown home">
-                            <a class="nav-link d-inline-block" href="index.html">Home</a>
-                            <!-- arrow link after home -->
-                            <a class="dropdown-toggle d-inline-block d-md-none" href="index.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="sr-only">Jump to section</span></a>
-                            <!-- sub menu -->
-                            <ul class="dropdown-menu sub-menu d-md-none" aria-labelledby="navbarDropdown">
-                                <li class="sub-menu-title">Jump to section</li>
-                                <li class="sub-menu-item">
-                                    <a class="sub-nav-link" href="index.html#popular">Popular Classes</a>
-                                </li>
-                                <li class="sub-menu-item">
-                                    <a class="sub-nav-link" href="index.html#benefits">The Benefits of Music</a>
-                                </li>
-                                <li class="sub-menu-item">
-                                    <a class="sub-nav-link" href="index.html#testimonials">Testimonials</a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="about.html">About Us</a>
-                        </li>
-                        <li class="nav-item active">
-                            <a class="nav-link" href="classes.html">Classes/Fees<span class="sr-only">(current)</span></a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="contact.html">Contact</a>
-                        </li>
-                        <li class="nav-item">
-                            <ul class="social-icons-list">
-                                <li>
-                                    <a target="_blank" href="https://twitter.com/">
-                                        <i class="fab fa-twitter fa-sm" aria-hidden="true"></i>
-                                        <span class="sr-only">Twitter</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a target="_blank" href="https://www.linkedin.com/">
-                                        <i class="fab fa-linkedin-in fa-sm" aria-hidden="true"></i>
-                                        <span class="sr-only">LinkedIn</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a target="_blank" href="https://www.facebook.com/">
-                                        <i class="fab fa-facebook-f fa-sm" aria-hidden="true"></i>
-                                        <span class="sr-only">Facebook</span>
-                                    </a>
-                                </li>
-                            </ul>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
-        </div>
+          <button
+            class="navbar-toggler collapsed"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbars"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbars">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item dropdown home">
+                <a class="nav-link d-inline-block" href="index.html">Главная</a>
+                <a
+                  class="dropdown-toggle d-inline-block d-md-none"
+                  href="index.html"
+                  id="navbarDropdown"
+                  role="button"
+                  data-toggle="dropdown"
+                >
+                  <span class="sr-only">Перейти к разделу</span>
+                </a>
+
+                <ul class="dropdown-menu sub-menu d-md-none" aria-labelledby="navbarDropdown">
+                  <li class="sub-menu-title">Разделы</li>
+                  <li class="sub-menu-item">
+                    <a class="sub-nav-link" href="index.html#popular">Популярные занятия</a>
+                  </li>
+                  <li class="sub-menu-item">
+                    <a class="sub-nav-link" href="index.html#benefits">Польза музыки</a>
+                  </li>
+                  <li class="sub-menu-item">
+                    <a class="sub-nav-link" href="index.html#testimonials">Отзывы</a>
+                  </li>
+                </ul>
+              </li>
+
+              <li class="nav-item"><a class="nav-link" href="about.html">О нас</a></li>
+
+              <li class="nav-item active">
+                <a class="nav-link" href="classes.html"
+                  >Занятия и цены<span class="sr-only">(текущая)</span></a
+                >
+              </li>
+
+              <li class="nav-item"><a class="nav-link" href="contact.html">Контакты</a></li>
+
+              <li class="nav-item">
+                <ul class="social-icons-list">
+                  <li>
+                    <a target="_blank" href="https://twitter.com/"
+                      ><i class="fab fa-twitter fa-sm"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a target="_blank" href="https://www.linkedin.com/"
+                      ><i class="fab fa-linkedin-in fa-sm"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a target="_blank" href="https://www.facebook.com/"
+                      ><i class="fab fa-facebook-f fa-sm"></i
+                    ></a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
     </header>
-    
-    <main id="maincontent">
-        <div class="title-panel title-panel--classes">
-            <div class="container">
-                <h1 class="page-title">Classes/Fees</h1>
-            </div>
-        </div>
-        <div class="container py-5">
-            <div class="row">
-                <div class="col-12 text-center">
-                    <p class="lead lead--larger">Music School has a wide range of classes, suitable for all ages and levels, from beginner to advanced and everything in between! To enquire about enrolling in any of our classes, please select a class and fill in the form below.</p>
-                </div>
-            </div>
-        </div>
-        <!-- Classes list -->
-        <div class="row-outer-container bg-light-grey pb-5">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12 pt-5 pb-3">
-                        <h2 class="content-heading">Our Music Classes</h2>
-                        <p class="lead">All classes cost &euro;265 for a 10 week course.</p>
-                    </div>
-                </div>
-                <div class="row class-item rounded mb-3 mb-md-2 text-center">
-                    <div class="col-md-2">
-                        <div class="class-icon">
-                            <img src="assets/images/guitar-icon.svg" alt="guitar icon" />
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <h3 class="content-heading class-title">Guitar Classes</h3>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="days">
-                            <p><strong>Wed</strong>: 6pm - 8pm</p>
-                            <p><strong>Sat</strong>: 10am - 12pm</p>
-                        </div>
-                    </div>
-                    <div class="col-md-2">
-                        <div class="date">
-                            <div class="next-term">Next term starts</div>
-                            <span class="day">29</span><span class="month">Feb</span>
-                        </div>
-                    </div>
-                    <div class="col-md-2">
-                        <a class="btn btn-primary btn-lg class-btn" href="#class-enquiry-container" onclick="document.getElementById('guitar-checkbox').checked = true">Enquire</a>
-                    </div>
-                </div>
-                <div class="row class-item rounded mb-3 mb-md-2 text-center">
-                    <div class="col-md-2">
-                        <div class="class-icon">
-                            <img src="assets/images/piano-icon.svg" alt="piano icon" />
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <h3 class="content-heading class-title">Piano Classes</h3>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="days">
-                            <p><strong>Wed</strong>: 6pm - 8pm</p>
-                            <p><strong>Sat</strong>: 10am - 12pm</p>
-                        </div>
-                    </div>
-                    <div class="col-md-2">
-                        <div class="date">
-                            <div class="next-term">Next term starts</div>
-                            <span class="day">10</span><span class="month">Mar</span>
-                        </div>
-                    </div>
-                    <div class="col-md-2">
-                        <a class="btn btn-primary btn-lg class-btn" href="#class-enquiry-container" onclick="document.getElementById('piano-checkbox').checked = true">Enquire</a>
-                    </div>
-                </div>
-                <div class="row class-item rounded mb-3 mb-md-2 text-center">
-                    <div class="col-md-2">
-                        <div class="class-icon">
-                            <img src="assets/images/drum-icon.svg" alt="drums icon" />
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <h3 class="content-heading class-title">Drums Classes</h3>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="days">
-                            <p><strong>Wed</strong>: 6pm - 8pm</p>
-                            <p><strong>Sat</strong>: 10am - 12pm</p>
-                        </div>
-                    </div>
-                    <div class="col-md-2">
-                        <div class="date">
-                            <div class="next-term">Next term starts</div>
-                            <span class="day">13</span><span class="month">Mar</span>
-                        </div>
-                    </div>
-                    <div class="col-md-2">
-                        <a class="btn btn-primary btn-lg class-btn" href="#class-enquiry-container" onclick="document.getElementById('drums-checkbox').checked = true">Enquire</a>
-                    </div>
-                </div>
-                <div class="row class-item rounded mb-3 mb-md-2 text-center">
-                    <div class="col-md-2">
-                        <div class="class-icon">
-                            <img src="assets/images/micrphone-icon.svg" alt="microphone icon" />
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <h3 class="content-heading class-title">Singing Classes</h3>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="days">
-                            <p><strong>Wed</strong>: 6pm - 8pm</p>
-                            <p><strong>Sat</strong>: 10am - 12pm</p>
-                        </div>
-                    </div>
-                    <div class="col-md-2">
-                        <div class="date">
-                            <div class="next-term">Next term starts</div>
-                            <span class="day">24</span><span class="month">Mar</span>
-                        </div>
-                    </div>
-                    <div class="col-md-2">
-                        <a class="btn btn-primary btn-lg class-btn" href="#class-enquiry-container" onclick="document.getElementById('singing-checkbox').checked = true">Enquire</a>
-                    </div>
-                </div>
-                <div class="row class-item rounded mb-3 mb-md-2 text-center">
-                    <div class="col-md-2">
-                        <div class="class-icon">
-                            <img src="assets/images/violin-icon.svg" alt="violin icon" />
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <h3 class="content-heading class-title">Violin Classes</h3>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="days">
-                            <p><strong>Wed</strong>: 6pm - 8pm</p>
-                            <p><strong>Sat</strong>: 10am - 12pm</p>
-                        </div>
-                    </div>
-                    <div class="col-md-2">
-                        <div class="date">
-                            <div class="next-term">Next term starts</div>
-                            <span class="day">09</span><span class="month">Apr</span>
-                        </div>
-                    </div>
-                    <div class="col-md-2">
-                        <a class="btn btn-primary btn-lg class-btn" href="#class-enquiry-container" onclick="document.getElementById('violin-checkbox').checked = true">Enquire</a>
-                    </div>
-                </div>
-                <div class="row class-item rounded mb-3 mb-md-2 text-center">
-                    <div class="col-md-2">
-                        <div class="class-icon">
-                            <img src="assets/images/trumpet-icon.svg" alt="trumpet icon" />
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <h3 class="content-heading class-title">Trumpet Classes</h3>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="days">
-                            <p><strong>Wed</strong>: 6pm - 8pm</p>
-                            <p><strong>Sat</strong>: 10am - 12pm</p>
-                        </div>
-                    </div>
-                    <div class="col-md-2">
-                        <div class="date">
-                            <div class="next-term">Next term starts</div>
-                            <span class="day">16</span><span class="month">Mar</span>
-                        </div>
-                    </div>
-                    <div class="col-md-2">
-                        <a class="btn btn-primary btn-lg class-btn" href="#class-enquiry-container" onclick="document.getElementById('trumpet-checkbox').checked = true">Enquire</a>
-                    </div>
-                </div>
-            </div>
-        </div><!-- ./outer-row -->
-        <div class="container" id="class-enquiry-container">
-            <div class="row justify-content-center">
-                <div class="col-lg-8 pt-5 pb-5">
-                    <h2 class="content-heading mb-4 text-center">Enquire about our upcoming classes</h2>
-                    <p class="lead text-center pb-5">Fill in the form below with your desired instrument and we will get back to you as soon as possible.</p>
-                    <form id="class-enquiry">
-                        <div class="row">
-                            <div class="col-12 col-md-6">
-                                <div class="form-group">
-                                    <input type="text" name="name" id="fullname" class="form-control" required />
-                                    <label class="form-control-placeholder" for="fullname">Name</label>
-                                </div>
-                            </div>
-                            <div class="col-12 col-md-6">
-                                <div class="form-group">
-                                    <input type="email" name="email" id="email" class="form-control" required />
-                                    <label class="form-control-placeholder" for="email">Email</label>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-12 col-md-6">
-                                <div class="form-group">
-                                    <input type="text" name="phone" id="phone" class="form-control" required />
-                                    <label class="form-control-placeholder" for="phone">Phone</label>
-                                </div>
-                            </div>
-                            <div class="col-12 col-md-6">
-                                <div class="form-group">
-                                    <select id="age-group" name="age-group" class="form-control" required>
-                                        <option selected disabled value="">Student age group...</option>
-                                        <option>5 to 12 years</option>
-                                        <option>13 to 18 years</option>
-                                        <option>18+ years</option>
-                                    </select>
-                                    <label class="form-control-placeholder sr-only" for="age-group">Student Age Group</label>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-12 col-md-6">
-                                <div class="form-group">
-                                    <select id="experience" name="experience" class="form-control" required>
-                                        <option selected disabled value="">What's your experience level?</option>
-                                        <option>Beginner</option>
-                                        <option>Intermediate</option>
-                                        <option>Advanced</option>
-                                    </select>
-                                    <label class="form-control-placeholder sr-only" for="age-group">What's your experience level?</label>
-                                </div>
-                            </div>
-                            <div class="col-12 col-md-6">
-                                <div class="form-group">
-                                    <select id="free-class" name="free-class" class="form-control" required>
-                                        <option selected disabled value="">Would you like a Free Class?</option>
-                                        <option>Yes</option>
-                                        <option>No</option>
-                                    </select>
-                                    <label class="form-control-placeholder sr-only" for="age-group">Would you like a Free Class?</label>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col">
-                                <fieldset class="border p-3 my-3 rounded">
-                                    <legend class="legend w-auto px-1">What instrument(s) are you interested in?</legend>
-                                    <div class="form-check form-check-inline">
-                                        <input class="form-check-input" type="checkbox" id="guitar-checkbox" value="guitar">
-                                        <label class="form-check-label" for="guitar-checkbox">Guitar</label>
-                                    </div>
-                                    <div class="form-check form-check-inline">
-                                        <input class="form-check-input" type="checkbox" id="piano-checkbox" value="piano">
-                                        <label class="form-check-label" for="piano-checkbox">Piano</label>
-                                    </div>
-                                    <div class="form-check form-check-inline">
-                                        <input class="form-check-input" type="checkbox" id="drums-checkbox" value="drums">
-                                        <label class="form-check-label" for="drums-checkbox">Drums</label>
-                                    </div>
-                                    <div class="form-check form-check-inline">
-                                        <input class="form-check-input" type="checkbox" id="singing-checkbox" value="singing">
-                                        <label class="form-check-label" for="singing-checkbox">Singing</label>
-                                    </div>
-                                    <div class="form-check form-check-inline">
-                                        <input class="form-check-input" type="checkbox" id="violin-checkbox" value="violin">
-                                        <label class="form-check-label" for="violin-checkbox">Violin</label>
-                                    </div>
-                                    <div class="form-check form-check-inline">
-                                        <input class="form-check-input" type="checkbox" id="trumpet-checkbox" value="trumpet">
-                                        <label class="form-check-label" for="trumpet-checkbox">Trumpet</label>
-                                    </div>
-                                </fieldset>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col">
-                                <div class="form-group">
-                                    <textarea name="message" id="message" class="form-control" required></textarea>
-                                    <label class="form-control-placeholder" for="message">Any other comments</label>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col text-center">
-                                <!-- Button trigger modal -->
-                                <button type="button" class="btn btn-secondary btn-lg" data-toggle="modal" data-target="#classesFormModal">Enquire</button>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-            </div><!-- ./row -->
-        </div><!-- ./container -->
-    </main><!-- /maincontent -->
-    <footer class="full-width-footer">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm">
-                    <div class="logo-footer mb-4 text-center text-sm-left">
-                        <img src="assets/images/music-school-logo-white.svg" alt="Music School logo" class="logo">
-                    </div>
-                    <div class="footer-text text-justify text-sm-left">
-                        <p>The Music School offers high quality Piano, Guitar, Drums, Violin, Trumpet and Singing lessons in North Dublin. It is our goal to ensure that every student is encouraged to be a passionate and productive musician.</p>
-                        <p><a href="about.html#about-school">Read more...</a></p>
-                    </div>
-                </div>
-                <div class="col-sm opening-hours pt-4 pt-sm-0">
-                    <h4 class="widget-heading text-center text-sm-left">Class Hours</h4>
-                    <ul class="oh-list">
-                        <li class="oh-list-item">
-                            <strong>Monday to Friday</strong><br>
-                            9am - 5pm
-                        </li>
-                        <li class="oh-list-item">
-                            <strong>Saturdays</strong><br>
-                            10am - 3pm
-                        </li>
-                        <li class="oh-list-item">
-                            <strong>Evening Classes</strong><br>
-                            6pm - 9pm
-                        </li>
-                    </ul>
-                </div>
-                <div class="col-sm pt-4 pt-sm-0">
-                    <h4 class="widget-heading text-center text-sm-left">Contact Us</h4>
-                    <ul class="contact-icons-list">
-                        <li class="contact-list-item">
-                            <a href="https://goo.gl/maps/59VPLiMFGJ8kMzbK6" target="_blank"><i class="fas fa-map-marker-alt fa-lg"></i>St Aidan's Park Rd, Clontarf West, Dublin 3, Ireland</a>
-                        </li>
-                        <li class="contact-list-item">
-                            <a href="tel:0035318551234"><i class="fas fa-phone-alt fa-lg"></i>+353 1 855 1234</a>
-                        </li>
-                        <li class="contact-list-item">
-                            <a href="mailto:info@musicschool.ie"><i class="fas fa-envelope fa-lg"></i>info@musicschool.ie</a>
-                        </li>
-                    </ul>
-                    <ul class="social-icons-list text-center text-sm-left">
-                        <li>
-                            <a target="_blank" href="https://twitter.com/">
-                                <i class="fab fa-twitter fa-sm" aria-hidden="true"></i>
-                                <span class="sr-only">Twitter</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a target="_blank" href="https://www.linkedin.com/">
-                                <i class="fab fa-linkedin-in fa-sm" aria-hidden="true"></i>
-                                <span class="sr-only">LinkedIn</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a target="_blank" href="https://www.facebook.com/">
-                                <i class="fab fa-facebook-f fa-sm" aria-hidden="true"></i>
-                                <span class="sr-only">Facebook</span>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <!-- copyright -->
-        <div class="full-width-copyright">
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm-4">
-                        2020 &copy; Music School
-                    </div>
-                    <div class="col-sm-4">
-                        For educational purposes only. 
-                        <a href="https://www.vecteezy.com/free-vector/flowers">Instrument Vectors by Vecteezy</a>
-                    </div>
-                    <div class="col-sm-4">
-                        Website by Kevin Bourke
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
-    <!-- Modal -->
-    <div class="modal fade" id="classesFormModal" tabindex="-1" role="dialog" aria-labelledby="classesformmodal" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title content-heading" id="classesformmodal">Thank you for testing my classes enquiry form</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    <p>This form is not yet functional, and does not collect any personal information.</p>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
-</body>
+    <main id="maincontent">
+      <!-- Title -->
+      <div class="title-panel title-panel--classes">
+        <div class="container">
+          <h1 class="page-title">Занятия и цены</h1>
+        </div>
+      </div>
+
+      <div class="container py-5">
+        <div class="row">
+          <div class="col-12 text-center">
+            <p class="lead lead--larger">
+              Музыкальная школа предлагает широкий выбор занятий для всех возрастов и уровней — от
+              новичков до продвинутых! Для записи на любое занятие выберите интересующую программу и
+              заполните форму ниже.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Classes List -->
+      <div class="row-outer-container bg-light-grey pb-5">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 pt-5 pb-3">
+              <h2 class="content-heading">Наши занятия</h2>
+              <p class="lead">Стоимость любого курса — €265 за 10 недель обучения.</p>
+            </div>
+          </div>
+
+          <!-- GUITAR -->
+          <div class="row class-item rounded mb-3 text-center">
+            <div class="col-md-2">
+              <div class="class-icon">
+                <img src="assets/images/guitar-icon.svg" alt="guitar icon" />
+              </div>
+            </div>
+            <div class="col-md-3"><h3 class="content-heading class-title">Уроки гитары</h3></div>
+            <div class="col-md-3">
+              <div class="days">
+                <p><strong>Ср</strong>: 18:00–20:00</p>
+                <p><strong>Сб</strong>: 10:00–12:00</p>
+              </div>
+            </div>
+            <div class="col-md-2">
+              <div class="date">
+                <div class="next-term">Следующий курс</div>
+                <span class="day">29</span><span class="month">Фев</span>
+              </div>
+            </div>
+            <div class="col-md-2">
+              <a
+                class="btn btn-primary btn-lg class-btn"
+                href="#class-enquiry-container"
+                onclick="document.getElementById('guitar-checkbox').checked = true"
+                >Записаться</a
+              >
+            </div>
+          </div>
+
+          <!-- PIANO -->
+          <div class="row class-item rounded mb-3 text-center">
+            <div class="col-md-2">
+              <img src="assets/images/piano-icon.svg" class="class-icon" />
+            </div>
+            <div class="col-md-3">
+              <h3 class="content-heading class-title">Уроки фортепиано</h3>
+            </div>
+            <div class="col-md-3">
+              <p><strong>Ср</strong>: 18:00–20:00</p>
+              <p><strong>Сб</strong>: 10:00–12:00</p>
+            </div>
+            <div class="col-md-2">
+              <div class="date">
+                <div class="next-term">Следующий курс</div>
+                <span class="day">10</span><span class="month">Мар</span>
+              </div>
+            </div>
+            <div class="col-md-2">
+              <a
+                class="btn btn-primary btn-lg class-btn"
+                onclick="document.getElementById('piano-checkbox').checked = true"
+                >Записаться</a
+              >
+            </div>
+          </div>
+
+          <!-- DRUMS -->
+          <div class="row class-item rounded mb-3 text-center">
+            <div class="col-md-2"><img src="assets/images/drum-icon.svg" class="class-icon" /></div>
+            <div class="col-md-3"><h3 class="content-heading class-title">Уроки ударных</h3></div>
+            <div class="col-md-3">
+              <p><strong>Ср</strong>: 18:00–20:00</p>
+              <p><strong>Сб</strong>: 10:00–12:00</p>
+            </div>
+            <div class="col-md-2">
+              <div class="date">
+                <div class="next-term">Следующий курс</div>
+                <span class="day">13</span><span class="month">Мар</span>
+              </div>
+            </div>
+
+            <div class="col-md-2">
+              <a
+                class="btn btn-primary btn-lg class-btn"
+                onclick="document.getElementById('drums-checkbox').checked = true"
+                >Записаться</a
+              >
+            </div>
+          </div>
+
+          <!-- SINGING -->
+          <div class="row class-item rounded mb-3 text-center">
+            <div class="col-md-2">
+              <img src="assets/images/micrphone-icon.svg" class="class-icon" />
+            </div>
+            <div class="col-md-3"><h3 class="content-heading class-title">Уроки вокала</h3></div>
+            <div class="col-md-3">
+              <p><strong>Ср</strong>: 18:00–20:00</p>
+              <p><strong>Сб</strong>: 10:00–12:00</p>
+            </div>
+            <div class="col-md-2">
+              <div class="date">
+                <div class="next-term">Следующий курс</div>
+                <span class="day">24</span><span class="month">Мар</span>
+              </div>
+            </div>
+
+            <div class="col-md-2">
+              <a
+                class="btn btn-primary btn-lg class-btn"
+                onclick="document.getElementById('singing-checkbox').checked = true"
+                >Записаться</a
+              >
+            </div>
+          </div>
+
+          <!-- VIOLIN -->
+          <div class="row class-item rounded mb-3 text-center">
+            <div class="col-md-2">
+              <img src="assets/images/violin-icon.svg" class="class-icon" />
+            </div>
+            <div class="col-md-3"><h3 class="content-heading class-title">Уроки скрипки</h3></div>
+            <div class="col-md-3">
+              <p><strong>Ср</strong>: 18:00–20:00</p>
+              <p><strong>Сб</strong>: 10:00–12:00</p>
+            </div>
+            <div class="col-md-2">
+              <div class="date">
+                <div class="next-term">Следующий курс</div>
+                <span class="day">09</span><span class="month">Апр</span>
+              </div>
+            </div>
+
+            <div class="col-md-2">
+              <a
+                class="btn btn-primary btn-lg class-btn"
+                onclick="document.getElementById('violin-checkbox').checked = true"
+                >Записаться</a
+              >
+            </div>
+          </div>
+
+          <!-- TRUMPET -->
+          <div class="row class-item rounded mb-3 text-center">
+            <div class="col-md-2">
+              <img src="assets/images/trumpet-icon.svg" class="class-icon" />
+            </div>
+            <div class="col-md-3"><h3 class="content-heading class-title">Уроки трубы</h3></div>
+            <div class="col-md-3">
+              <p><strong>Ср</strong>: 18:00–20:00</p>
+              <p><strong>Сб</strong>: 10:00–12:00</p>
+            </div>
+            <div class="col-md-2">
+              <div class="date">
+                <div class="next-term">Следующий курс</div>
+                <span class="day">16</span><span class="month">Мар</span>
+              </div>
+            </div>
+
+            <div class="col-md-2">
+              <a
+                class="btn btn-primary btn-lg class-btn"
+                onclick="document.getElementById('trumpet-checkbox').checked = true"
+                >Записаться</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ENQUIRY FORM -->
+      <div class="container" id="class-enquiry-container">
+        <div class="row justify-content-center">
+          <div class="col-lg-8 pt-5 pb-5">
+            <h2 class="content-heading text-center mb-4">Запись на занятия</h2>
+            <p class="lead text-center pb-5">
+              Заполните форму ниже — мы свяжемся с вами в ближайшее время.
+            </p>
+
+            <form id="class-enquiry">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <input type="text" name="name" id="fullname" class="form-control" required />
+                    <label class="form-control-placeholder" for="fullname">Имя</label>
+                  </div>
+                </div>
+
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <input type="email" name="email" id="email" class="form-control" required />
+                    <label class="form-control-placeholder" for="email">Email</label>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <input type="text" name="phone" id="phone" class="form-control" required />
+                    <label class="form-control-placeholder" for="phone">Телефон</label>
+                  </div>
+                </div>
+
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <select id="age-group" name="age-group" class="form-control" required>
+                      <option selected disabled value="">Возраст ученика...</option>
+                      <option>5–12 лет</option>
+                      <option>13–18 лет</option>
+                      <option>18+ лет</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <select id="experience" name="experience" class="form-control" required>
+                      <option selected disabled value="">Уровень подготовки...</option>
+                      <option>Новичок</option>
+                      <option>Средний уровень</option>
+                      <option>Продвинутый</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <select id="free-class" name="free-class" class="form-control" required>
+                      <option selected disabled value="">Пробное занятие?</option>
+                      <option>Да</option>
+                      <option>Нет</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+
+              <fieldset class="border p-3 my-3 rounded">
+                <legend class="legend w-auto px-1">Какие инструменты вас интересуют?</legend>
+
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="checkbox" id="guitar-checkbox" /><label
+                    class="form-check-label"
+                    for="guitar-checkbox"
+                    >Гитара</label
+                  >
+                </div>
+
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="checkbox" id="piano-checkbox" /><label
+                    class="form-check-label"
+                    for="piano-checkbox"
+                    >Фортепиано</label
+                  >
+                </div>
+
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="checkbox" id="drums-checkbox" /><label
+                    class="form-check-label"
+                    for="drums-checkbox"
+                    >Ударные</label
+                  >
+                </div>
+
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="checkbox" id="singing-checkbox" /><label
+                    class="form-check-label"
+                    for="singing-checkbox"
+                    >Вокал</label
+                  >
+                </div>
+
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="checkbox" id="violin-checkbox" /><label
+                    class="form-check-label"
+                    for="violin-checkbox"
+                    >Скрипка</label
+                  >
+                </div>
+
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="checkbox" id="trumpet-checkbox" /><label
+                    class="form-check-label"
+                    for="trumpet-checkbox"
+                    >Труба</label
+                  >
+                </div>
+              </fieldset>
+
+              <div class="form-group">
+                <textarea name="message" id="message" class="form-control" required></textarea>
+                <label class="form-control-placeholder" for="message">Комментарий</label>
+              </div>
+
+              <div class="text-center">
+                <button
+                  type="button"
+                  class="btn btn-secondary btn-lg"
+                  data-toggle="modal"
+                  data-target="#classesFormModal"
+                >
+                  Отправить заявку
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="full-width-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm">
+            <img
+              src="assets/images/music-school-logo-white.svg"
+              alt="Логотип музыкальной школы"
+              class="logo mb-4"
+            />
+            <p>
+              Мы предлагаем уроки игры на пианино, гитаре, ударных, скрипке, трубе и вокала в
+              Северном Дублине. Наша цель — вдохновлять каждого ученика.
+            </p>
+            <p><a href="about.html#about-school">Подробнее...</a></p>
+          </div>
+
+          <div class="col-sm opening-hours pt-4 pt-sm-0">
+            <h4 class="widget-heading">Часы работы</h4>
+            <ul class="oh-list">
+              <li><strong>Пн–Пт</strong><br />9:00–17:00</li>
+              <li><strong>Сб</strong><br />10:00–15:00</li>
+              <li><strong>Вечерние занятия</strong><br />18:00–21:00</li>
+            </ul>
+          </div>
+
+          <div class="col-sm pt-4 pt-sm-0">
+            <h4 class="widget-heading">Контакты</h4>
+            <ul class="contact-icons-list">
+              <li>
+                <a href="https://goo.gl/maps/59VPLiMFGJ8kMzbK6"
+                  ><i class="fas fa-map-marker-alt"></i> St Aidan's Park Rd, Dublin 3</a
+                >
+              </li>
+              <li>
+                <a href="tel:0035318551234"><i class="fas fa-phone-alt"></i> +353 1 855 1234</a>
+              </li>
+              <li>
+                <a href="mailto:info@musicschool.ie"
+                  ><i class="fas fa-envelope"></i> info@musicschool.ie</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="full-width-copyright">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-4">2020 © Музыкальная школа</div>
+            <div class="col-sm-4">
+              Только в учебных целях.
+              <a href="https://www.vecteezy.com/free-vector/flowers">Вектор графика — Vecteezy</a>
+            </div>
+            <div class="col-sm-4">Сайт разработан Kevin Bourke</div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- MODAL -->
+    <div class="modal fade" id="classesFormModal">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Спасибо за отправку заявки!</h5>
+            <button type="button" class="close" data-dismiss="modal">
+              <span>&times;</span>
+            </button>
+          </div>
+
+          <div class="modal-body">
+            <p>Поздравляю, ты взломан хаах (шутка)</p>
+          </div>
+
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Закрыть</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- scripts -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  </body>
 </html>
